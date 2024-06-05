@@ -1,1 +1,11 @@
+.changeset
+.direnv
+.github
+.envrc
+.gitignore
+flake.lock
+flake.nix
+package-lock.json
+pnpm-lock.yml
+tsconfig.json
 
