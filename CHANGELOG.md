@@ -1,5 +1,11 @@
 # react-trinkets
 
+## 0.0.3
+
+### Patch Changes
+
+- caed5d3: Various updates to make actions publish and react version compatibility
+
 ## 0.0.2
 
 ### Patch Changes
