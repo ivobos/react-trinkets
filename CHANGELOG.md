@@ -1,5 +1,11 @@
 # react-trinkets
 
+## 0.0.5
+
+### Patch Changes
+
+- 831893d: Provide example and manage which files are published
+
 ## 0.0.4
 
 ### Patch Changes
