@@ -19,9 +19,17 @@ yarn add react-trinkets
 With npm:
 
 ```bash
-npm install --save react-trinkets
+npm install --save-dev react-trinkets
 ```
 
 ## Usage
 
 Each trinket has their own default properties. You can overwrite the defaults by passing props into the component.
+### Last Visited
+```
+import { LastVisited } from "react-trinkets";
+
+...
+    <LastVisited></LastVisited>
+...
+```

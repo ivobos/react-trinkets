@@ -6,7 +6,7 @@ interface LastVisitedProps {
     testOffset?: number;
 }
 
-const LastVisited: React.FC<LastVisitedProps> = ({ storagePrefix = "", testOffset = 0 }) => {
+const LastVisited: React.FC<LastVisitedProps> = ({ storagePrefix = "LastVisited-", testOffset = 0 }) => {
     const [lastVisited, setLastVisited] = useState<Date | null>(null);
 
     const getCurrentDate = () => {
@@ -52,27 +52,27 @@ const LastVisited: React.FC<LastVisitedProps> = ({ storagePrefix = "", testOffse
         const years = Math.floor(months / 12);
 
         if (seconds < 60) {
-            return `${seconds} seconds ago`;
+            return `${seconds} seconds`;
         } else if (seconds < 120) {
-            return `${minutes} minutes and ${seconds % 60} seconds ago`;
+            return `${minutes} minutes and ${seconds % 60} seconds`;
         } else if (minutes < 60) {
-            return `${minutes} minutes ago`;
+            return `${minutes} minutes`;
         } else if (minutes < 120) {
-            return `${hours} hours and ${minutes % 60} minutes ago`;
+            return `${hours} hours and ${minutes % 60} minutes`;
         } else if (hours < 24) {
-            return `${hours} hours ago`;
+            return `${hours} hours`;
         } else if (hours < 48) {
-            return `${days} days and ${hours % 24} hours ago`;
+            return `${days} days and ${hours % 24} hours`;
         } else if (days < 30) {
-            return `${days} days ago`;
+            return `${days} days`;
         } else if (days < 60) {
-            return `${months} months and ${days % 30} days ago`;
+            return `${months} months and ${days % 30} days`;
         } else if (months < 12) {
-            return `${months} months ago`;
+            return `${months} months`;
         } else if (months < 24) {
-            return `${years} years and ${months % 12} months ago`;
+            return `${years} years and ${months % 12} months`;
         } else {
-            return `${years} years ago`;
+            return `${years} years`;
         }
     };
 
