@@ -1,5 +1,11 @@
 # react-trinkets
 
+## 0.0.4
+
+### Patch Changes
+
+- 73e8a36: Add cjs and esm support
+
 ## 0.0.3
 
 ### Patch Changes
