@@ -22,14 +22,25 @@ With npm:
 npm install --save-dev react-trinkets
 ```
 
-## Usage
-
+# Usage
 Each trinket has their own default properties. You can overwrite the defaults by passing props into the component.
-### Last Visited
-```
+
+## Last Visited
+This component welcomes users to your website and remembers their last visit. It displays a personalized message depending on how recently they visited. For example, it might say "Welcome back!" if they visited yesterday or "Hey there! It's been a while" if it's been a longer time.
+
+### Example
+
+```tsx
 import { LastVisited } from "react-trinkets";
 
-...
-    <LastVisited></LastVisited>
-...
+function App() {
+
+  return (
+    <div>
+        <ReactTrinkets>
+    <div>
+  );
+}
+
+export default App;
 ```

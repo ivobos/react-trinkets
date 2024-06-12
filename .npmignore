@@ -8,6 +8,8 @@ flake.nix
 package-lock.json
 pnpm-lock.yml
 tsconfig.json
-tscinfig.cjs.json
-tscinfig.esm.json
+tsconfig.cjs.json
+tsconfig.esm.json
 RELEASE.md
+src
+CONTRIBUTING.md
