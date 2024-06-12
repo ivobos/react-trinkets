@@ -15,12 +15,13 @@
         "react",
         "trinkets"
     ],
-    "main": "dist/index.js",
-    "module": "dist/index.mjs",
-    "types": "dist/index.d.js",
+    "main": "cjs/index.js",
+    "module": "esm/index.js",
+    "types": "cjs/index.d.js",
     "scripts": {
-        "build": "pnpm run build:cjs",
+        "build": "pnpm run build:cjs && pnpm run build:esm",
         "build:cjs": "tsc --project tsconfig.cjs.json --outDir cjs",
+        "build:esm": "tsc --project tsconfig.esm.json --outDir esm",
         "release": "pnpm run build && changeset publish",
         "lint": "tsc"
     },

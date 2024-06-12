@@ -9,9 +9,12 @@ pnpm run build
 
 # test local changes in another project
 ```bash
-cd my-test-project
-npm i ~/path-to/react-trinkets --save-dev
+cd ~src/react-trinkets
+npm link
+cd ~src/react-trinkets-web
+npm link react-trinkets
 ```
+you may need to re-start the dev server in react-trunkets-web
 
 # Create release branch
 ```bash
