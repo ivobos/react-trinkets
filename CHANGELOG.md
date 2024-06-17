@@ -1,5 +1,11 @@
 # react-trinkets
 
+## 0.0.6
+
+### Patch Changes
+
+- 1383e2b: inspirational quotes
+
 ## 0.0.5
 
 ### Patch Changes
