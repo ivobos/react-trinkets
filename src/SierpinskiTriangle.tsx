@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 
 interface SierpinskiTriangleProps {
     width?: number;
@@ -7,17 +7,23 @@ interface SierpinskiTriangleProps {
 }
 
 const SierpinskiTriangle: React.FC<SierpinskiTriangleProps> = ({
-                                                                   width = 100,
-                                                                   height = 100,
-                                                                   depth = 5,
-                                                               }) => {
+    width = 100,
+    height = 100,
+    depth = 2,
+}) => {
     const [maxTriangles, setMaxTriangles] = useState(1);
 
     useEffect(() => {
-        let count = 1;
         const intervalId = setInterval(() => {
-            setMaxTriangles(count);
-            count = (count % (Math.pow(3, depth) - 1)) + 1;
+            setMaxTriangles(val => {
+                if (val < depth * 3) {
+                    return val + 1
+                } else {
+                    clearInterval(intervalId);
+                    return val;
+                }
+            }
+            );
         }, 100);
 
         return () => clearInterval(intervalId);
@@ -35,11 +41,9 @@ const SierpinskiTriangle: React.FC<SierpinskiTriangleProps> = ({
 
     const drawTriangle = (x: number, y: number, size: number, level: number, count: number) => {
         if (level === 0 || count >= maxTriangles) return;
-
         const color1 = colors[level % colors.length];
         const color2 = colors[(level + 1) % colors.length];
         const gradientId = `gradient-${level}`;
-
         return (
             <g>
                 <defs>
@@ -58,7 +62,6 @@ const SierpinskiTriangle: React.FC<SierpinskiTriangleProps> = ({
             </g>
         );
     };
-
     return (
         <svg width={width} height={height}>
             {drawTriangle(0, 0, width, depth, 1)}
