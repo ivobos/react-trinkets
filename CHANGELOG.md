@@ -1,5 +1,11 @@
 # react-trinkets
 
+## 0.0.7
+
+### Patch Changes
+
+- acd06d9: moar trinkets
+
 ## 0.0.6
 
 ### Patch Changes
