@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
+import { BubbleSortVisualiser, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
 
 const container = document.getElementById('app');
 const root = createRoot(container!);
@@ -36,6 +36,12 @@ root.render(<div>
     <div style={{ border: 'solid 1px black' }}>
         <div>PrimeNumberCheck:</div>
         <PrimeNumberCheck />
+    </div>
+    <div style={{ border: 'solid 1px black' }}>
+        <div>BubbleSortVisualiser:</div>
+        <div style={{ width: '320px', height: '200px', }}>
+            <BubbleSortVisualiser />
+        </div>
     </div>
 </div >
 );
