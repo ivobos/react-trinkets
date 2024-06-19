@@ -12,10 +12,11 @@ const StockTickerApp = () => {
                 <input type="text" value={ticker} onChange={(e) => setTicker(e.target.value)} />
             </div>
             <div>
-                <span>www.alphavantage.co API Key:</span>
+                <span>API Key:</span>
                 <input type="text" value={apiKey} onChange={(e) => setApiKey(e.target.value)} />
+                <span>(www.alphavantage.co)</span>
             </div>
-            <div style={{ width: '10vw' }}>
+            <div>
                 <StockTicker ticker={ticker} apiKey={apiKey} />
             </div>
         </div>

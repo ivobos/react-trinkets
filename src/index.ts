@@ -12,4 +12,5 @@ export { default as PrimeNumberCheck } from "./PrimeNumberCheck";
 export { default as SierpinskiTriangle } from "./SierpinskiTriangle";
 export { default as SockTicker } from "./StockTicker";
 export { default as VirtualAquarium } from "./VirtualAquarium";
+export { default as WeatherIcon } from "./WeatherIcon";
 
