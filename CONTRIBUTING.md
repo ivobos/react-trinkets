@@ -7,6 +7,11 @@ on linux or mac install nix, direnv
 pnpm run build
 ```
 
+# test locally
+```bash
+pnpm run demo
+```
+
 # test local changes in another project
 ```bash
 cd ~src/react-trinkets
