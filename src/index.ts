@@ -12,7 +12,7 @@ export { default as PasswordStrengthMeter } from "./PasswordStrengthMeter";
 export { default as PixelArtGenerator } from "./PixelArtGenerator";
 export { default as PrimeNumberCheck } from "./PrimeNumberCheck";
 export { default as SierpinskiTriangle } from "./SierpinskiTriangle";
-export { default as SockTicker } from "./StockTicker";
+export { default as StockTicker } from "./StockTicker";
 export { default as VirtualAquarium } from "./VirtualAquarium";
 export { default as WeatherIcon } from "./WeatherIcon";
 
