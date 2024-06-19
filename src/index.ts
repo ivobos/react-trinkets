@@ -2,6 +2,7 @@
 export { default as BouncingLogo } from "./BouncingLogo";
 export { default as BubbleSortVisualiser } from "./BubbleSortVisualiser";
 export { default as ColorPicker } from "./ColorPicker";
+export { default as DigitalClock } from "./DigitalClock";
 export { default as FractalExplorer } from "./FractalExplorer";
 export { default as InspirationalQuote } from "./InspirationalQuote";
 export { default as KochSnowflake } from "./KochSnowflake";

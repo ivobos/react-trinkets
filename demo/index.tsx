@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BouncingLogo, BubbleSortVisualiser, ColorPicker, FractalExplorer, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
+import { BouncingLogo, BubbleSortVisualiser, ColorPicker, DigitalClock, FractalExplorer, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
 import PasswordStregthMeterApp from './apps/PasswordStrenthMeterApp';
 import StockTickerApp from './apps/StockTickerApp';
 import WeatherIconApp from './apps/WeatherIconApp';
@@ -73,6 +73,10 @@ root.render(<div>
                 <span>Your Logo Here</span>
             </BouncingLogo>
         </div>
+    </div>
+    <div style={{ border: 'solid 1px black' }}>
+        <div>DigitalClock:</div>
+        <DigitalClock color="#070" size={50} />
     </div>
 </div >
 );
