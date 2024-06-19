@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { PasswordStrengthMeter } from "../src";
+import { PasswordStrengthMeter } from "../../src";
 
 const PasswordStregthMeterApp = () => {
     const [password, setPassword] = useState('aaa');

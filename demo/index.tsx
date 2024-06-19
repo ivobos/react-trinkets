@@ -1,7 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BubbleSortVisualiser, ColorPicker, FractalExplorer, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
-import PasswordStregthMeterApp from './PasswordStrenthMeterApp';
+import PasswordStregthMeterApp from './apps/PasswordStrenthMeterApp';
+import StockTickerApp from './apps/StockTickerApp';
 
 const container = document.getElementById('app');
 const root = createRoot(container!);
@@ -55,6 +56,10 @@ root.render(<div>
     <div style={{ border: 'solid 1px black' }}>
         <div>ColorPicker:</div>
         <ColorPicker />
+    </div>
+    <div style={{ border: 'solid 1px black' }}>
+        <div>StockTickerApp:</div>
+        <StockTickerApp />
     </div>
 </div >
 );

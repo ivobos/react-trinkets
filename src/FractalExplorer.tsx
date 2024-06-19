@@ -28,11 +28,11 @@ const FractalExplorer: React.FC<FractalProps> = ({ width, height }) => {
         }
     }, [center, zoom]);
 
-    // react down't allow prevent default for canvas.onWheel, because it registers it
+    // react doesn't allow prevent default for canvas.onWheel, because it registers it
     // as a passive listener, so here we use react escape hatch and prevent default manually
     useEffect(() => {
         const canvas = canvasRef.current;
-        canvas?.addEventListener("wheel", preventWheelDefault);
+        canvas?.addEventListener("wheel", preventWheelDefault, { passive: false });
         return () => canvas?.removeEventListener("wheel", preventWheelDefault);
     }, [canvasRef]);
 
