@@ -1,5 +1,11 @@
 # react-trinkets
 
+## 0.0.9
+
+### Patch Changes
+
+- f1910f6: fix export typo
+
 ## 0.0.8
 
 ### Patch Changes
