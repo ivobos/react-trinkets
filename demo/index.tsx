@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BubbleSortVisualiser, FractalExplorer, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
+import { BubbleSortVisualiser, ColorPicker, FractalExplorer, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
 import PasswordStregthMeterApp from './PasswordStrenthMeterApp';
 
 const container = document.getElementById('app');
@@ -51,6 +51,10 @@ root.render(<div>
     <div style={{ border: 'solid 1px black' }}>
         <div>PasswordStrengthMeter:</div>
         <PasswordStregthMeterApp />
+    </div>
+    <div style={{ border: 'solid 1px black' }}>
+        <div>ColorPicker:</div>
+        <ColorPicker />
     </div>
 </div >
 );
