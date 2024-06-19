@@ -1,6 +1,7 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import { BubbleSortVisualiser, FractalExplorer, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
+import PasswordStregthMeterApp from './PasswordStrenthMeterApp';
 
 const container = document.getElementById('app');
 const root = createRoot(container!);
@@ -46,6 +47,10 @@ root.render(<div>
     <div style={{ border: 'solid 1px black' }}>
         <div>FractalExplorer:</div>
         <FractalExplorer width={320} height={200} />
+    </div>
+    <div style={{ border: 'solid 1px black' }}>
+        <div>PasswordStrengthMeter:</div>
+        <PasswordStregthMeterApp />
     </div>
 </div >
 );
