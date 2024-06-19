@@ -1,4 +1,5 @@
 
+export { default as BouncingLogo } from "./BouncingLogo";
 export { default as BubbleSortVisualiser } from "./BubbleSortVisualiser";
 export { default as ColorPicker } from "./ColorPicker";
 export { default as FractalExplorer } from "./FractalExplorer";

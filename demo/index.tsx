@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BubbleSortVisualiser, ColorPicker, FractalExplorer, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
+import { BouncingLogo, BubbleSortVisualiser, ColorPicker, FractalExplorer, InspirationalQuote, KochSnowflake, LastVisited, LocalTimeTraveler, PixelArtGenerator, PrimeNumberCheck, SierpinskiTriangle, VirtualAquarium } from '../src/index';
 import PasswordStregthMeterApp from './apps/PasswordStrenthMeterApp';
 import StockTickerApp from './apps/StockTickerApp';
 import WeatherIconApp from './apps/WeatherIconApp';
@@ -66,7 +66,14 @@ root.render(<div>
         <div>WeatherIconApp:</div>
         <WeatherIconApp />
     </div>
-
+    <div style={{ border: 'solid 1px black' }}>
+        <div>BouncingLogo:</div>
+        <div style={{ position: 'relative', width: '20vw', height: '20vh', border: '1px black solid' }}>
+            <BouncingLogo>
+                <span>Your Logo Here</span>
+            </BouncingLogo>
+        </div>
+    </div>
 </div >
 );
 
