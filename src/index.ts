@@ -1,5 +1,6 @@
 
 export { default as BubbleSortVisualiser } from "./BubbleSortVisualiser";
+export { default as FractalExplorer } from "./FractalExplorer";
 export { default as InspirationalQuote } from "./InspirationalQuote";
 export { default as KochSnowflake } from "./KochSnowflake";
 export { default as LastVisited } from "./LastVisited";
